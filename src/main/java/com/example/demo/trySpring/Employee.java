@@ -1,41 +1,37 @@
 package com.example.demo.trySpring;
 
-import lombok.Data;
-
-@Data
 public class Employee {
 
 	private int employeeId; // 従業員ID
 	private String employeeName; // 従業員名
 	private int age; // 年齢
 
-	public void setEmployeeName(String employeeName2) {
-		// TODO 自動生成されたメソッド・スタブ
+	public Employee() {
 
 	}
 
-	public void setEmployeeId(int employeeId2) {
-		// TODO 自動生成されたメソッド・スタブ
-
+	public int getEmployeeId() {
+		return employeeId;
 	}
 
-	public void setAge(int age2) {
-		// TODO 自動生成されたメソッド・スタブ
-
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
 	}
 
-	public Object getEmployeeId() {
-		// TODO 自動生成されたメソッド・スタブ
-		return null;
+	public String getEmployeeName() {
+		return employeeName;
 	}
 
-	public Object getEmployeeName() {
-		// TODO 自動生成されたメソッド・スタブ
-		return null;
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
 	}
 
-	public Object getAge() {
-		// TODO 自動生成されたメソッド・スタブ
-		return null;
+	public int getAge() {
+		return age;
 	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
 }
